@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "215126885718",
+    "project_id": "txmed-c9893",
+    "storage_bucket": "txmed-c9893.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:215126885718:android:c0348623aed63378f042f7",
+        "android_client_info": {
+          "package_name": "com.example.txmed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "215126885718-6auall9c24q2tngme4c093pl114eb1gq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV-vz7flA9fzhPPXj2BJmGSExe5H0sbb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "215126885718-6auall9c24q2tngme4c093pl114eb1gq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

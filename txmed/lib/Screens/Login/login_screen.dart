@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:txmed/Screens/Welcome/constants.dart';
 import 'package:txmed/components/already_have_account.dart';
 import 'package:txmed/components/background.dart';
 import 'package:txmed/constants.dart';
@@ -13,20 +14,20 @@ class LoginScreen extends StatelessWidget {
         child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("TxMED",
+        const Text("TxMED",
             style: TextStyle(
                 fontSize: 30,
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(252, 232, 217, 217))),
-        LoginForm(),
-        SizedBox(
+                color: textColor)),
+        const LoginForm(),
+        const SizedBox(
           height: defaultPadding,
         ),
-        SizedBox(
-          child: LoginBtn(),
+        const SizedBox(
           width: 100,
+          child: LoginBtn(),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         AlreadyHaveAnAccountCheck(
@@ -50,7 +51,7 @@ class LoginBtn extends StatelessWidget {
         tag: "login_btn",
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.blue,
+              primary: buttonColor,
               minimumSize: const Size.fromHeight(40),
             ),
             onPressed: () {
@@ -59,6 +60,6 @@ class LoginBtn extends StatelessWidget {
               );
               print('login pressed');
             },
-            child: Text("Login")));
+            child: const Text("Login")));
   }
 }

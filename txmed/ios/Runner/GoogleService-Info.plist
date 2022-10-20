@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>215126885718-kdgu1lll7ejn7q9ai56p3pu7s3bd1osp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.215126885718-kdgu1lll7ejn7q9ai56p3pu7s3bd1osp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDmtOMvoEqpKmUzYoTN9bj0Y2RT_g-Qv94</string>
+	<key>GCM_SENDER_ID</key>
+	<string>215126885718</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.txmed</string>
+	<key>PROJECT_ID</key>
+	<string>txmed-c9893</string>
+	<key>STORAGE_BUCKET</key>
+	<string>txmed-c9893.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:215126885718:ios:26aa31808bc646ecf042f7</string>
+</dict>
+</plist>

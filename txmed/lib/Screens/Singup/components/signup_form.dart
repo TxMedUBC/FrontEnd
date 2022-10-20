@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:txmed/constants.dart';
+
 
 class SignupForm extends StatelessWidget {
   const SignupForm({super.key});
@@ -12,12 +13,13 @@ class SignupForm extends StatelessWidget {
           child: TextFormField(
             keyboardType: TextInputType.emailAddress,
             textInputAction: TextInputAction.next,
-            cursorColor: Colors.white,
+            cursorColor: cursorColor,
+            // TODO Connect to firebase
             onSaved: (email) {},
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: "Your email",
               prefixIcon: Padding(
-                padding: const EdgeInsets.fromLTRB(10, 0, 20, 0),
+                padding: EdgeInsets.fromLTRB(10, 0, 20, 0),
                 child: Icon(Icons.person),
               ),
             ),
@@ -27,12 +29,12 @@ class SignupForm extends StatelessWidget {
           child: TextFormField(
             textInputAction: TextInputAction.done,
             obscureText: true,
-            cursorColor: Colors.white,
+            cursorColor: cursorColor,
             onSaved: (email) {},
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               hintText: "Your password",
               prefixIcon: Padding(
-                padding: const EdgeInsets.fromLTRB(10, 0, 20, 0),
+                padding: EdgeInsets.fromLTRB(10, 0, 20, 0),
                 child: Icon(Icons.lock),
               ),
             ),
@@ -54,11 +56,11 @@ class TextFieldContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-        margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+        margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
         width: size.width * 0.8,
         decoration: BoxDecoration(
-            color: Color.fromARGB(255, 123, 143, 160),
+            color: const Color.fromARGB(255, 123, 143, 160),
             borderRadius: BorderRadius.circular(12)),
         child: child);
   }

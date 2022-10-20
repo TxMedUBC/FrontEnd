@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:txmed/Screens/Welcome/constants.dart';
 import 'package:txmed/constants.dart';
 
 class LoginSignupBtn extends StatelessWidget {
@@ -9,18 +9,18 @@ class LoginSignupBtn extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SizedBox(
-          width: 14,
+        const SizedBox(
+          width: defaultSizedBoxPad,
         ),
         Expanded(
           child: Column(
-            children: [
+            children: const [
               SizedBox(
                 height: defaultPadding,
               ),
               LoginBtn(),
               SizedBox(
-                height: 14,
+                height: defaultSizedBoxPad,
               ),
               SignupBtn(),
               SizedBox(
@@ -29,8 +29,8 @@ class LoginSignupBtn extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
-          width: 14,
+        const SizedBox(
+          width: defaultSizedBoxPad,
         ),
       ],
     );
@@ -46,8 +46,8 @@ class LoginBtn extends StatelessWidget {
         tag: "login_btn",
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.blue,
-              minimumSize: const Size.fromHeight(40),
+              primary: buttonColor,
+              minimumSize: buttonSize,
             ),
             onPressed: () {
               Navigator.of(context).pushNamed(
@@ -55,7 +55,7 @@ class LoginBtn extends StatelessWidget {
               );
               print('login pressed');
             },
-            child: Text("Login")));
+            child: const Text("Login")));
   }
 }
 
@@ -68,8 +68,8 @@ class SignupBtn extends StatelessWidget {
         tag: "signup_btn",
         child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: Colors.blue,
-              minimumSize: const Size.fromHeight(40),
+              primary: buttonColor,
+              minimumSize: buttonSize,
             ),
             onPressed: () {
               Navigator.of(context).pushNamed(
@@ -77,6 +77,6 @@ class SignupBtn extends StatelessWidget {
               );
               print('signup pressed');
             },
-            child: Text("Sign Up")));
+            child: const Text("Sign Up")));
   }
 }

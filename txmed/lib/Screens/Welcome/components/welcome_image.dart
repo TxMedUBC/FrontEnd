@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:txmed/constants.dart';
+
+
+const double textSize = 30;
+const double spaceBtwElems = 10;
 
 class WelcomeImage extends StatelessWidget {
   const WelcomeImage({super.key});
@@ -9,24 +12,24 @@ class WelcomeImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
+        const SizedBox(
           height: defaultPadding,
         ),
-        Text("TxMED",
+        const Text("TxMED",
             style: TextStyle(
-                fontSize: 30,
+                fontSize: textSize,
                 fontWeight: FontWeight.bold,
-                color: Color.fromARGB(252, 232, 217, 217))),
-        SizedBox(
-          height: 10,
+                color: textColor)),
+        const SizedBox(
+          height: spaceBtwElems,
         ),
         Expanded(
           child: SizedBox(
             child: Image.asset("assets/icons/login.png", fit: BoxFit.fitHeight),
           ),
         ),
-        SizedBox(
-          height: 10,
+        const SizedBox(
+          height: spaceBtwElems,
         ),
       ],
     );

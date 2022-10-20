@@ -3,6 +3,8 @@ import 'package:txmed/components/background.dart';
 import 'components/login_signup_btn.dart';
 import 'components/welcome_image.dart';
 
+const double loginSignupBtnWidth = 150;
+
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -10,11 +12,11 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BackGround(
         child: Column(
-      children: [
+      children: const [
         Expanded(child: WelcomeImage()),
         SizedBox(
+          width: loginSignupBtnWidth,
           child: LoginSignupBtn(),
-          width: 150,
         ),
       ],
     ));

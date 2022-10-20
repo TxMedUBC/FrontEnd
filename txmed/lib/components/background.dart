@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:txmed/constants.dart';
 
 class BackGround extends StatelessWidget {
   final Widget child;
@@ -16,10 +17,10 @@ class BackGround extends StatelessWidget {
             child: Center(
                 child: Container(
       decoration: BoxDecoration(
-          color: Color.fromARGB(255, 35, 42, 54),
+          color: welcomeBackgroundColor,
           borderRadius: BorderRadius.circular(12)),
-      width: 400,
-      height: 400,
+      width: screenSizeW,
+      height: screenSizeH,
       child: child,
     ))));
   }

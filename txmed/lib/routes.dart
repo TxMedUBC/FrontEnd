@@ -10,11 +10,8 @@ typedef PathWidgetBuilder = Widget Function(BuildContext);
 
 class Path {
   const Path(this.pattern, this.builder, {this.openInSecondScreen = false});
-
   final String pattern;
-
   final PathWidgetBuilder builder;
-
   final bool openInSecondScreen;
 }
 
